@@ -8,3 +8,4 @@ The following are the steps to set up and test the playwright tests for the foll
 6. To run the test use `npx playwright test Login.spec.js` for a headed mode and using the chromium browsers only use `npx playwright test Login.spec.js --project=chromium --headed`
 7. To get the reports on the info of the test cases use the `npx playwright test show-report`
 8. We can get a screenshot as well, this is an inbuilt functionality we get with playwright using `await page.screenshot({ path: 'screenshot.png', fullPage: true });` or `await page.screenshot({ path: 'screenshot.png' });` in your test code.
+9. Also by the way, we are checking for the text "Products" after the login in the page to check if the login is successful or not.
